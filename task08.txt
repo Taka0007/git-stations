@@ -1,0 +1,16 @@
+## 価格改定のコミット
+commit b5e0283ec70f16ea2d5d15ae637744af32bee89b
+Author: Àżu <yamane_kota@techbowl.co.jp>
+Date:   Thu Jul 4 14:27:31 2024 +0900
+
+    fix: 飲み物の価格を改宁E
+
+## その直前のコミット
+commit 533863793cfff7aeaf437b3b710b09e806972ecd
+Author: Àżu <yamane_kota@techbowl.co.jp>
+Date:   Thu Jul 4 14:26:24 2024 +0900
+
+    fix: チE  トを修正
+
+## 使用コマンド
+git diff b5e0283ec70f16ea2d5d15ae637744af32bee89b 533863793cfff7aeaf437b3b710b09e806972ecd > git-diff.txt

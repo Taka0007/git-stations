@@ -96,6 +96,19 @@ h1 {
   const mainBranch = 'main'
   const git = simpleGit()
 
+  // ブランチが既に存在する場合は削除
+  try {
+    await git.deleteLocalBranch(featureHeaderStyleBranch)
+  } catch (e) {
+    // ブランチが存在しない場合はスキップ
+  }
+
+  try {
+    await git.deleteLocalBranch(featureAccessStyleBranch)
+  } catch (e) {
+    // ブランチが存在しない場合はスキップ
+  }
+
   await git.checkoutBranch(featureHeaderStyleBranch, mainBranch)
   fs.appendFileSync(styleSheetPath, headerStyle)
 
